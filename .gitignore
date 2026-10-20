@@ -1,0 +1,18 @@
+# Local unpacked distributions and installers
+*.vpk
+*.zip
+*.7z
+*.rar
+*.bak
+*.tmp
+*.log
+*.sfo
+*.bin
+/.build/
+/build/
+/dist/
+/output/
+/work/
+
+# The original MOD executable can be distributed separately as a GitHub release
+# asset after its exact SHA-256 checksum has been independently verified.
