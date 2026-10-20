@@ -79,7 +79,7 @@ ux0:data/ONETROPHY/archive/
 
 The main code changes are in `system/commons.lua` (archiving, restoration, archive index, safeguards) and `system/trophies_title.lua` (Active/Hidden UI, 100-slot counter, hide/restore operations, duplicate-state protection, and database refresh). The archive index is text-based. The code prevents restoring when `#trophyT >= 100`.
 
-The intent is to preserve the active/archived trophy data locally, not to patch Sony's firmware or circumvent server-side rules. Code and logic can be audited in the readable Lua scripts packaged within the supplied VPK. The GitHub source mirror is being assembled from that historical package.
+The intent is to preserve the active/archived trophy data locally, not to patch Sony's firmware or circumvent server-side rules. Code and logic can be audited in the readable Lua scripts packaged within the supplied VPK. The verified [Lua source tree](source/) has now been published in this repository. The two core files are [archive management](source/system/commons.lua) and [trophy list / UI](source/system/trophies_title.lua); see [source provenance](SOURCE-NOTES.md) for byte-level validation and packaging details. All 15 root-level Lua/text files were verified against the original historical VPK by matching Git blob SHA-1 IDs.
 
 ## Credits and license
 
